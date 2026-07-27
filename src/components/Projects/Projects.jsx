@@ -49,7 +49,7 @@ function Projects() {
 
       github: "#",
 
-      live: "itsgautamkumar-port-folio.vercel.app",
+      live: "gautam-personal-portfolio-rose.vercel.app",
     },
 
     {
