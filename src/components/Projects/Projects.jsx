@@ -50,6 +50,7 @@ function Projects() {
       github: "#",
 
       live: "gautam-personal-portfolio-rose.vercel.app",
+
     },
 
     {
