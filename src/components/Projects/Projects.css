@@ -1,0 +1,288 @@
+/* ===================================================
+   PROJECTS SECTION
+=================================================== */
+
+.projects {
+  position: relative;
+  padding: 7rem 0;
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+/* ===================================================
+   SECTION HEADING
+=================================================== */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-heading span {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+/* ===================================================
+   PROJECT GRID
+=================================================== */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+/* ===================================================
+   PROJECT CARD
+=================================================== */
+
+.project-card {
+  position: relative;
+
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  border-radius: 22px;
+
+  backdrop-filter: blur(20px);
+
+  overflow: hidden;
+
+  transition: .4s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+
+  border-color: rgba(0,229,255,.35);
+
+  box-shadow: 0 20px 45px rgba(108,99,255,.25);
+}
+
+/* ===================================================
+   HEADER
+=================================================== */
+
+.project-header {
+  padding: 2rem;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+.project-header h3 {
+  color: var(--white);
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+}
+
+/* ===================================================
+   DESCRIPTION
+=================================================== */
+
+.project-description {
+  padding: 1.5rem 2rem;
+
+  color: var(--text-light);
+
+  line-height: 1.8;
+
+  min-height: 120px;
+}
+
+/* ===================================================
+   TECH STACK
+=================================================== */
+
+.project-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: .8rem;
+
+  padding: 0 2rem 2rem;
+}
+
+.tech-badge {
+  padding: .5rem 1rem;
+
+  border-radius: 50px;
+
+  background: rgba(255,255,255,.06);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  color: var(--text-color);
+
+  font-size: .85rem;
+
+  transition: .3s;
+}
+
+.tech-badge:hover {
+  background: var(--primary-color);
+
+  color: var(--white);
+
+  transform: translateY(-3px);
+}
+
+/* ===================================================
+   BUTTONS
+=================================================== */
+
+.project-buttons {
+  display: flex;
+
+  gap: 1rem;
+
+  padding: 0 2rem 2rem;
+}
+
+.project-btn {
+  flex: 1;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: .6rem;
+
+  padding: .9rem 1rem;
+
+  border-radius: 12px;
+
+  font-weight: 600;
+
+  transition: .35s;
+}
+
+/* Primary */
+
+.project-btn.primary {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  color: var(--white);
+}
+
+.project-btn.primary:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 15px 35px rgba(108,99,255,.35);
+}
+
+/* Secondary */
+
+.project-btn.secondary {
+  background: rgba(255,255,255,.05);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  color: var(--white);
+}
+
+.project-btn.secondary:hover {
+  background: rgba(255,255,255,.08);
+
+  transform: translateY(-4px);
+}
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media (max-width:992px){
+
+  .projects-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+  }
+
+}
+
+@media (max-width:768px){
+
+  .projects{
+
+    padding:5rem 0;
+
+  }
+
+  .section-heading h2{
+
+    font-size:2.4rem;
+
+  }
+
+  .projects-container{
+
+    grid-template-columns:1fr;
+
+  }
+
+}
+
+@media (max-width:576px){
+
+  .section-heading h2{
+
+    font-size:2rem;
+
+  }
+
+  .project-header{
+
+    padding:1.5rem;
+
+  }
+
+  .project-description{
+
+    padding:1.5rem;
+
+    min-height:auto;
+
+  }
+
+  .project-tech{
+
+    padding:0 1.5rem 1.5rem;
+
+  }
+
+  .project-buttons{
+
+    flex-direction:column;
+
+    padding:0 1.5rem 1.5rem;
+
+  }
+
+}

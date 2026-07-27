@@ -1,0 +1,24 @@
+:root {
+  /* Colors */
+  --primary-color: #6C63FF;
+  --secondary-color: #00E5FF;
+  --background-color: #050816;
+  --card-color: #10172A;
+  --white: #FFFFFF;
+  --text-color: #E6E6E6;
+  --text-light: #A9B3C1;
+  --border-color: rgba(255,255,255,0.08);
+
+  /* Font Size */
+  --h1: 4rem;
+  --h2: 3rem;
+  --h3: 2rem;
+  --normal: 1rem;
+  --small: 0.9rem;
+
+  /* Border Radius */
+  --radius: 16px;
+
+  /* Transition */
+  --transition: 0.4s ease;
+}

@@ -1,0 +1,238 @@
+/* ======================================================
+   ABOUT SECTION
+====================================================== */
+
+.about {
+  position: relative;
+  padding: 7rem 0;
+  background: var(--background-color);
+  overflow: hidden;
+}
+
+/* ======================================================
+   SECTION HEADING
+====================================================== */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-heading span {
+  display: inline-block;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  font-size: 3rem;
+  color: var(--white);
+}
+
+/* ======================================================
+   ABOUT CONTAINER
+====================================================== */
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* ======================================================
+   LEFT
+====================================================== */
+
+.about-left h3 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+}
+
+.about-left p {
+  color: var(--text-light);
+  line-height: 1.9;
+  margin-bottom: 1.3rem;
+  font-size: 1rem;
+}
+
+.about-left strong {
+  color: var(--secondary-color);
+}
+
+/* ======================================================
+   RIGHT
+====================================================== */
+
+.about-right {
+  display: grid;
+  gap: 1.4rem;
+}
+
+/* ======================================================
+   CARD
+====================================================== */
+
+.about-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  padding: 1.5rem;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  backdrop-filter: blur(18px);
+
+  transition: all .35s ease;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0,229,255,.35);
+
+  box-shadow: 0 20px 40px rgba(108,99,255,.18);
+}
+
+/* ======================================================
+   ICON
+====================================================== */
+
+.about-icon {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  color: var(--white);
+
+  font-size: 1.4rem;
+
+  box-shadow: 0 10px 25px rgba(108,99,255,.3);
+}
+
+/* ======================================================
+   CARD CONTENT
+====================================================== */
+
+.about-card h4 {
+  color: var(--white);
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
+}
+
+.about-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+  font-size: .95rem;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width:992px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+gap:3rem;
+
+}
+
+.about-left{
+
+text-align:center;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.about{
+
+padding:5rem 0;
+
+}
+
+.section-heading h2{
+
+font-size:2.4rem;
+
+}
+
+.about-left h3{
+
+font-size:1.8rem;
+
+}
+
+.about-card{
+
+padding:1.2rem;
+
+}
+
+.about-icon{
+
+width:55px;
+height:55px;
+
+min-width:55px;
+
+font-size:1.2rem;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.section-heading h2{
+
+font-size:2rem;
+
+}
+
+.about-left h3{
+
+font-size:1.5rem;
+
+}
+
+.about-card{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
