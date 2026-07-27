@@ -15,7 +15,7 @@ function Experience() {
     {
       id: 1,
 
-      company: "WiptoTalentNext",
+      company: "WiproTalentNext",
 
       role: "Software Development Intern",
 

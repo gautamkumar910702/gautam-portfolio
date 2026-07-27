@@ -52,11 +52,11 @@ function Contact() {
     },
   ];
 
-  console.log({
-  service: import.meta.env.VITE_EMAIL_SERVICE_ID,
-  template: import.meta.env.VITE_EMAIL_TEMPLATE_ID,
-  publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
-});
+//   console.log({
+//   service: import.meta.env.VITE_EMAIL_SERVICE_ID,
+//   template: import.meta.env.VITE_EMAIL_TEMPLATE_ID,
+//   publicKey: import.meta.env.VITE_EMAIL_PUBLIC_KEY,
+// });
   const sendEmail = async (e) => {
     e.preventDefault();
     setLoading(true);

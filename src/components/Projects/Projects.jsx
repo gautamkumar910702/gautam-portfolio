@@ -55,20 +55,18 @@ function Projects() {
     {
       id: 3,
 
-      title: "Weather App",
+      title: "New project Coming soon",
 
       description:
-        "Weather forecasting application using real-time API with responsive UI and location-based weather updates.",
+        "",
 
       tech: [
-        "React",
-        "Weather API",
-        "CSS",
+      
       ],
 
       github: "#",
 
-      live: "#",
+      // live: "",
     },
 
   ];
